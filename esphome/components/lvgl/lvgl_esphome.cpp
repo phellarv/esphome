@@ -325,7 +325,7 @@ void LvButtonMatrixType::set_obj(lv_obj_t *lv_obj) {
         while (len--)
           self->send_key_(*str++);
       },
-      LV_EVENT_PRESSED, this);
+      LV_EVENT_SHORT_CLICKED, this);
 }
 #endif  // USE_LVGL_BUTTONMATRIX
 
